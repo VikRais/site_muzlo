@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>muzlo</title>
+
+
+    <script>
+
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('#menu-top').addClass("bg-secondary bg-opacity-90");
+                    $('#menu-top').removeClass("border-b");
+                } else {
+                    $('#menu-top').removeClass("bg-secondary bg-opacity-90");
+                    $('#menu-top').addClass("border-b");
+                }
+            });
+        });
+
+
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <div id="menu-top" class=" w-full px-5 lg:py-0 py-5 transition-all border-b border-white border-opacity-20 fixed z-50">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center py-3 text-white">
+                <nav class="w-full flex menu ">
+                    <a class="logo" href="">LOGO</a>
+                    <ul class="lg:flex hidden lg:flex-nowrap flex-wrap">
+                        <li><a class="p-3 uppercase text-sm" href="">Главная</a></li>
+                        <li><a class="p-3 uppercase text-sm" href="">О нас</a></li>
+                        <li><a class="p-3 uppercase text-sm" href="">Услуги</a></li>
+                        <li><a class="p-3 uppercase text-sm" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="flex items-center justify-end w-full">
+                    <a class="lg:mr-5" href="">8(997)586-21-20</a>
+                    <button class="btn btn-primary lg:block hidden">Написать нам</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="bg home-bg block block__dark ">
+
+        <div class="flex items-center h-[700px] justify-center flex-wrap w-full">
+
+            <div class="container mx-auto z-40 relative">
+                <h1 class="mb-3">
+                    ЗВУКОЗАПИСЬ.<br>Волгоград МЫ ДЕЛАЕМ ЗВУК
+                </h1>
+                <p class="mb-5">
+                    Профессиональная студия звукозаписи позволяет выполнить озвучивание, <br>аранжировку, запись,
+                    сведение, создание отбивок, джинглов и другого медиа-контента. Звоните: +7 (499) 113-70-32
+
+                </p>
+                <button class="btn btn-primary px-5 py-3 text-white lg:w-auto w-full">ЗАБРОНИРОВАТЬ ВРЕМЯ
+                    СТУДИИ</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <section>
+        <div class="py-5 w-full flex lg:flex-nowrap flex-wrap items-center">
+
+            <div class="lg:w-1/2">
+                <img class="h-full" src="./src/img/micro.jpg" alt="">
+            </div>
+            <div class="lg:p-10 p-5 lg:w-1/2">
+
+                <h2 class="mb-5 font-bold">СТУДИЯ ДЛЯ СОЗДАНИЯ И ЗАПИСИ МУЗЫКИ</h2>
+                <p>
+                    Широкие возможности нашей студии позволят любому желающему в Москве справиться со сложной
+                    задачей создания и аранжировки песен, записи сингла или альбома, озвучивания и сведения ролика
+                    или аудиокниг.
+                    Наши возможности станут надежным инструментом для продвижения вашего бизнеса и воплощения
+                    творческих планов. Наш многолетний опыт работы в индустрии звукозаписи – гарантия качественного
+                    контента для вас.
+                    Вы можете не только сотрудничать с нашими специалистами, но и арендовать студийное помещение на
+                    любой срок для записи, сведения, мастеринга и других работ со звуком.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="service-bg bg block block__dark">
+        <div class="container mx-auto z-40 relative">
+            <div class="text-center my-10">
+                <h1>НАШИ УСЛУГИ</h1>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+                <div class="service-item">
+                    <h3 class="service-item__head">
+                        АРАНЖИРОВКА НА ЗАКАЗ
+                    </h3>
+                    <div class="service-item__body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam omnis aliquam reiciendis
+                        laudantium quas sit, laboriosam soluta. Est libero exercitationem voluptatem laboriosam dolore
+                        illo unde nostrum corrupti tempora! Ab, veritatis!
+                    </div>
+
+                    <div class="service-item__footer">
+                        <button class="btn btn-outline  w-full">Заказать</button>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <h3 class="service-item__head">
+                        АРАНЖИРОВКА НА ЗАКАЗ
+                    </h3>
+                    <div class="service-item__body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam omnis aliquam reiciendis
+                        laudantium quas sit, laboriosam soluta. Est libero exercitationem voluptatem laboriosam dolore
+                        illo unde nostrum corrupti tempora! Ab, veritatis!
+                    </div>
+
+                    <div class="service-item__footer">
+                        <button class="btn btn-outline  w-full">Заказать</button>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <h3 class="service-item__head">
+                        АРАНЖИРОВКА НА ЗАКАЗ
+                    </h3>
+                    <div class="service-item__body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam omnis aliquam reiciendis
+                        laudantium quas sit, laboriosam soluta. Est libero exercitationem voluptatem laboriosam dolore
+                        illo unde nostrum corrupti tempora! Ab, veritatis!
+                    </div>
+
+                    <div class="service-item__footer">
+                        <button class="btn btn-outline  w-full">Заказать</button>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <h3 class="service-item__head">
+                        АРАНЖИРОВКА НА ЗАКАЗ
+                    </h3>
+                    <div class="service-item__body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam omnis aliquam reiciendis
+                        laudantium quas sit, laboriosam soluta. Est libero exercitationem voluptatem laboriosam dolore
+                        illo unde nostrum corrupti tempora! Ab, veritatis!
+                    </div>
+
+                    <div class="service-item__footer">
+                        <button class="btn btn-outline  w-full">Заказать</button>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <h3 class="service-item__head">
+                        АРАНЖИРОВКА НА ЗАКАЗ
+                    </h3>
+                    <div class="service-item__body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam omnis aliquam reiciendis
+                        laudantium quas sit, laboriosam soluta. Est libero exercitationem voluptatem laboriosam dolore
+                        illo unde nostrum corrupti tempora! Ab, veritatis!
+                    </div>
+
+                    <div class="service-item__footer">
+                        <button class="btn btn-outline  w-full">Заказать</button>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <h3 class="service-item__head">
+                        АРАНЖИРОВКА НА ЗАКАЗ
+                    </h3>
+                    <div class="service-item__body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam omnis aliquam reiciendis
+                        laudantium quas sit, laboriosam soluta. Est libero exercitationem voluptatem laboriosam dolore
+                        illo unde nostrum corrupti tempora! Ab, veritatis!
+                    </div>
+
+                    <div class="service-item__footer">
+                        <button class="btn btn-outline  w-full">Заказать</button>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <h3 class="service-item__head">
+                        АРАНЖИРОВКА НА ЗАКАЗ
+                    </h3>
+                    <div class="service-item__body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam omnis aliquam reiciendis
+                        laudantium quas sit, laboriosam soluta. Est libero exercitationem voluptatem laboriosam dolore
+                        illo unde nostrum corrupti tempora! Ab, veritatis!
+                    </div>
+
+                    <div class="service-item__footer">
+                        <button class="btn btn-outline  w-full">Заказать</button>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <h3 class="service-item__head">
+                        АРАНЖИРОВКА НА ЗАКАЗ
+                    </h3>
+                    <div class="service-item__body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam omnis aliquam reiciendis
+                        laudantium quas sit, laboriosam soluta. Est libero exercitationem voluptatem laboriosam dolore
+                        illo unde nostrum corrupti tempora! Ab, veritatis!
+                    </div>
+
+                    <div class="service-item__footer">
+                        <button class="btn btn-outline  w-full" w-full>Заказать</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="block">
+
+        <div class="container mx-auto">
+            <div class="text-center my-10">
+                <h1>НАШИ ПРЕИМУЩЕСТВА</h1>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 mt-20">
+                <div class="flex items-start justify-center flex-wrap text-center">
+                    <div class="bg-primary p-5 rounded-full mb-10">
+                        <img class="h-[50px]" src="./src/img/2.svg" alt="">
+                    </div>
+                    Широкий спектр основных и дополнительных услуг по созданию медиа-контента любого назначения.
+                </div>
+
+                <div class="flex items-start justify-center flex-wrap text-center">
+                    <div class="bg-primary p-5 rounded-full mb-10">
+                        <img class="h-[50px]" src="./src/img/2.svg" alt="">
+                    </div>
+                    Большое количество помещений, которые предназначены для выполнения тех или иных видов
+                    звукозаписывающих работ.
+                </div>
+                <div class="flex items-start justify-center flex-wrap text-center">
+                    <div class="bg-primary p-5 rounded-full mb-10">
+                        <img class="h-[50px]" src="./src/img/2.svg" alt="">
+                    </div>
+                    Широкий спектр основных и дополнительных услуг по созданию медиа-контента любого назначения.
+                </div>
+                <div class="flex items-start justify-center flex-wrap text-center">
+                    <div class="bg-primary p-5 rounded-full mb-10">
+                        <img class="h-[50px]" src="./src/img/2.svg" alt="">
+                    </div>
+                    Профессиональное аналоговое и цифровое оборудование, открывающее широкие звукозаписывающие
+                    возможности.
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="block bg people-bg bg-dark block__dark block__color">
+        <div class="container mx-auto relative z-40">
+            <div class="text-center justify-center flex items-center w-full flex-wrap my-10">
+                <!-- <img class="w-[100px] mb-10" src="./src/img/starts.svg" alt=""> -->
+                <h1 class="w-full">ОТЗЫВЫ О нашей СТУДИИ</h1>
+            </div>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide swiper-item">
+                        <div class="swiper-item__head">
+                            <h3>EMINEM</h3>
+                            <div class="swiper-item__stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-6 h-6">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-6 h-6">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                        clip-rule="evenodd" />
+                                </svg>
+
+
+                            </div>
+                        </div>
+                        <p class="swiper-item__text">1Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, sit
+                            assumenda suscipit
+                            necessitatibus molestiae eligendi error deserunt temporibus. Tenetur nesciunt alias dicta
+                            facilis a molestiae quibusdam error! Laborum, quisquam atque!</p>
+
+                    </div>
+                    <div class="swiper-slide swiper-item">
+                        <div class="swiper-item__head">
+                            <h3>Илья</h3>
+                            <div class="swiper-item__stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-6 h-6">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-6 h-6">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                                </svg>
+
+
+
+                            </div>
+                        </div>
+                        <p class="swiper-item__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, sit
+                            assumenda suscipit
+                            necessitatibus molestiae eligendi error deserunt temporibus. Tenetur nesciunt alias dicta
+                            facilis a molestiae quibusdam error! Laborum, quisquam atque!</p>
+
+                    </div>
+
+                    <div class="swiper-slide swiper-item">
+                        <div class="swiper-item__head">
+                            <h3>GUF</h3>
+                            <div class="swiper-item__stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-6 h-6">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-6 h-6">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-6 h-6">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                        clip-rule="evenodd" />
+                                </svg>
+
+
+                            </div>
+                        </div>
+                        <p class="swiper-item__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, sit
+                            assumenda suscipit
+                            necessitatibus molestiae eligendi error deserunt temporibus. Tenetur nesciunt alias dicta
+                            facilis a molestiae quibusdam error! Laborum, quisquam atque!</p>
+
+                    </div>
+
+                    <div class="swiper-slide swiper-item">
+                        <div class="swiper-item__head">
+                            <h3>Птаха</h3>
+                            <div class="swiper-item__stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-6 h-6">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-6 h-6">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-6 h-6">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                        clip-rule="evenodd" />
+                                </svg>
+
+
+                            </div>
+                        </div>
+                        <p class="swiper-item__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, sit
+                            assumenda suscipit
+                            necessitatibus molestiae eligendi error deserunt temporibus. Tenetur nesciunt alias dicta
+                            facilis a molestiae quibusdam error! Laborum, quisquam atque!</p>
+
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+
+
+<footer class="bg-primary p-10">
+    <div class="flex items-center justify-center">
+        <p>© 2022 Профессиональная студия звукозаписи в Волгоград</p>
+    </div>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            slidesPerView: 3,
+            initialSlide: 1,
+            spaceBetween: 30,
+            centeredSlides: true,
+
+
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+
+
+
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 10
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                }
+            },
+        });
+    </script>
+
+
+
+</footer>
+
+
+</html>
