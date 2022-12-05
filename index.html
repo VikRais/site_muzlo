@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="src/css/style.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -20,15 +21,29 @@
 
         $(function () {
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 100) {
-                    $('#menu-top').addClass("bg-secondary bg-opacity-90");
-                    $('#menu-top').removeClass("border-b");
+                if ($(this).scrollTop() > 750) {
+                    $('.adv-top').addClass("bg-secondary bg-opacity-90 fixed top-0");
+                    $('.adv-top').removeClass("border-b absolute bottom-0");
                 } else {
-                    $('#menu-top').removeClass("bg-secondary bg-opacity-90");
-                    $('#menu-top').addClass("border-b");
+                    $('.adv-top').removeClass("bg-secondary bg-opacity-90 fixed top-0");
+                    $('.adv-top').addClass("border-b absolute bottom-0");
                 }
             });
         });
+
+
+
+        //     function myAudioFunction(after) {
+        //     audio.pause()
+        //     audio = new Audio('C:\\Users\\SONU\\Desktop\\animal\\'+letter+'.mp3');
+        //      audio.play();
+        //  }
+
+
+
+
+
+
 
 
     </script>
@@ -39,7 +54,8 @@
 
 <body>
 
-    <div id="menu-top" class=" w-full px-5 lg:py-0 py-5 transition-all border-b border-white border-opacity-20 fixed z-50">
+    <div id="menu-top"
+        class=" w-full px-5 lg:py-0 py-5 transition-all border-b border-white border-opacity-20 absolute z-50">
         <div class="container mx-auto">
             <div class="flex justify-between items-center py-3 text-white">
                 <nav class="w-full flex menu ">
@@ -53,7 +69,7 @@
                 </nav>
                 <div class="flex items-center justify-end w-full">
                     <a class="lg:mr-5" href="">8(997)586-21-20</a>
-                    <button class="btn btn-primary lg:block hidden">Написать нам</button>
+                    <button class="btn lg:block hidden">Написать нам</button>
 
                 </div>
             </div>
@@ -62,7 +78,7 @@
 
 
 
-    <section class="bg home-bg block block__dark ">
+    <section class="bg home-bg block block__dark relative ">
 
         <div class="flex items-center h-[700px] justify-center flex-wrap w-full">
 
@@ -75,11 +91,46 @@
                     сведение, создание отбивок, джинглов и другого медиа-контента. Звоните: +7 (499) 113-70-32
 
                 </p>
-                <button class="btn btn-primary px-5 py-3 text-white lg:w-auto w-full">ЗАБРОНИРОВАТЬ ВРЕМЯ
-                    СТУДИИ</button>
+
 
             </div>
 
+        </div>
+
+
+        <div class="absolute w-full bg-gradient-to-l from-secondary border-t border-white border-opacity-20 bottom-0 left-0 z-50 lg:px-0 px-5 adv-top">
+            <div class="container mx-auto">
+                <div class="flex justify-between w-full py-5 items-center">
+
+
+                    <div class="flex items-center">
+<div class="div">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 mr-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+
+
+                        <h3 class="lg:text-lg text-sm uppercase">Оставьте заявку прямо сейчас</h3>
+
+                    </div>
+
+
+
+                    <button class="btn btn-primary px-0 bg-gradient-to-l from-white  py-0 lg:px-5 lg:py-3 text-white lg:w-auto flex items-center ">
+
+
+
+                        ЗАБРОНИРОВАТЬ
+                    </button>
+
+
+
+
+                </div>
+            </div>
         </div>
 
     </section>
@@ -89,26 +140,30 @@
 
 
     <section>
-        <div class="py-5 w-full flex lg:flex-nowrap flex-wrap items-center">
+        <div class="container mx-auto">
+            <div class="py-5 w-full flex lg:flex-nowrap flex-wrap items-center">
 
-            <div class="lg:w-1/2">
-                <img class="h-full" src="./src/img/micro.jpg" alt="">
+
+                <div class="lg:p-0 p-5 lg:w-1/2">
+
+                    <h2 class="mb-5 font-bold">СТУДИЯ ДЛЯ СОЗДАНИЯ И ЗАПИСИ МУЗЫКИ</h2>
+                    <p>
+                        Широкие возможности нашей студии позволят любому желающему в Москве справиться со сложной
+                        задачей создания и аранжировки песен, записи сингла или альбома, озвучивания и сведения ролика
+                        или аудиокниг.
+                        Наши возможности станут надежным инструментом для продвижения вашего бизнеса и воплощения
+                        творческих планов. Наш многолетний опыт работы в индустрии звукозаписи – гарантия качественного
+                        контента для вас.
+                        Вы можете не только сотрудничать с нашими специалистами, но и арендовать студийное помещение на
+                        любой срок для записи, сведения, мастеринга и других работ со звуком.
+                    </p>
+                </div>
+
+                <div class="lg:w-1/2">
+                    <img class="h-full" src="./src/img/1.PNG" alt="">
+                </div>
+
             </div>
-            <div class="lg:p-10 p-5 lg:w-1/2">
-
-                <h2 class="mb-5 font-bold">СТУДИЯ ДЛЯ СОЗДАНИЯ И ЗАПИСИ МУЗЫКИ</h2>
-                <p>
-                    Широкие возможности нашей студии позволят любому желающему в Москве справиться со сложной
-                    задачей создания и аранжировки песен, записи сингла или альбома, озвучивания и сведения ролика
-                    или аудиокниг.
-                    Наши возможности станут надежным инструментом для продвижения вашего бизнеса и воплощения
-                    творческих планов. Наш многолетний опыт работы в индустрии звукозаписи – гарантия качественного
-                    контента для вас.
-                    Вы можете не только сотрудничать с нашими специалистами, но и арендовать студийное помещение на
-                    любой срок для записи, сведения, мастеринга и других работ со звуком.
-                </p>
-            </div>
-
         </div>
     </section>
 
@@ -291,6 +346,55 @@
     </section>
 
 
+
+
+    <section class="block">
+
+        <div class="container mx-auto">
+            <div class="text-center my-10">
+                <h1>Наши работы</h1>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-20">
+                <div class="flex items-center justify-center flex-wrap text-center">
+                    <span>ДО</span>
+
+                    <button class="do">dooo</button>
+                    <button class="posle">posle</button>
+
+                    <audio class=" w-full" controls>
+                        <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis" controls="controls">
+                        <source src="./src/mus/do_acoustic folk.mp3" type="audio/mpeg">
+                        Тег audio не поддерживается вашим браузером.
+                        <a href="./src/mus/do_acoustic folk.mp3">Скачайте музыку</a>.
+                    </audio>
+
+
+
+                </div>
+
+
+
+                <div class="flex items-center justify-center flex-wrap text-center">
+                    <span>После</span>
+
+                    <audio class=" w-full" controls>
+                        <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis" controls="controls">
+                        <source src="./src/mus/posle_acoustic folk.mp3" type="audio/mpeg">
+                        Тег audio не поддерживается вашим браузером.
+                        <a href="audio/music.mp3">Скачайте музыку</a>.
+                    </audio>
+
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
     <section class="block bg people-bg bg-dark block__dark block__color">
         <div class="container mx-auto relative z-40">
             <div class="text-center justify-center flex items-center w-full flex-wrap my-10">
@@ -462,6 +566,23 @@
 
     <!-- Initialize Swiper -->
     <script>
+
+
+
+        var firstButtonIsClicked = false;
+
+        document.querySelector(".posle").addEventListener("click", function () {
+            firstButtonIsClicked = true;
+        });
+
+        document.querySelector(".do").addEventListener("click", function () {
+            if (firstButtonIsClicked) {
+                console.log("Кнопка была нажата");
+            }
+            else {
+                console.log("Кнопка не была нажата");
+            }
+        })
 
         const swiper = new Swiper('.swiper', {
             // Optional parameters
