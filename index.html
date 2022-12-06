@@ -362,26 +362,59 @@
     <section class="block bg-primary">
 
         <div class="container mx-auto">
-            <div class="text-center my-10">
+            <div class="text-center flex justify-between items-center px-5 my-5">
                 <h1>Наши работы</h1>
+
+                <div class="flex">
+
+                    <div class="work_arrow_left bg-white lg:p-5 p-3 rounded-lg lg:mr-2 mr-2">
+                        <svg class="w-5 h-5" width="12" height="22" viewBox="0 0 12 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.7939 1.93645C11.9312 2.07671 12 2.23812 12 2.42046C12 2.6028 11.9312 2.76421 11.7939 2.90447L3.69042 11.1742L11.7939 19.4443C11.9312 19.5844 12 19.7459 12 19.928C12 20.1106 11.9312 20.272 11.7939 20.4122L10.7628 21.4642C10.6254 21.6044 10.4672 21.6741 10.2888 21.6741C10.1101 21.6741 9.95193 21.604 9.81456 21.4642L0.206042 11.6579C0.068392 11.5177 1.27387e-07 11.3566 1.25213e-07 11.1742C1.23039e-07 10.9919 0.0686087 10.8304 0.206042 10.6902L9.81449 0.884567C9.95193 0.74409 10.1099 0.674072 10.289 0.674072C10.4672 0.674072 10.6254 0.744311 10.7628 0.884567L11.7939 1.93645Z"
+                                fill="#0B538C" />
+                        </svg>
+                    </div>
+
+
+
+                    <div class="work_arrow_right  bg-white lg:p-5 p-3 rounded-lg">
+                    <svg class="w-5 h-5" width="12" height="21" viewBox="0 0 12 21" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.206115 1.26238C0.0687537 1.40264 4.25572e-07 1.56405 4.23398e-07 1.74639C4.21223e-07 1.92873 0.0687537 2.09014 0.206115 2.23039L8.30958 10.5001L0.206115 18.7702C0.0687535 18.9104 2.16794e-07 19.0719 2.14623e-07 19.2539C2.12445e-07 19.4365 0.0687535 19.598 0.206115 19.7381L1.23719 20.7902C1.37455 20.9303 1.53279 21 1.71117 21C1.88991 21 2.04807 20.9299 2.18544 20.7902L11.794 10.9838C11.9316 10.8437 12 10.6825 12 10.5001C12 10.3178 11.9314 10.1563 11.794 10.0161L2.18551 0.210495C2.04807 0.0700176 1.89013 -1.20559e-07 1.71103 -1.22695e-07C1.53279 -1.2482e-07 1.37463 0.0702387 1.23719 0.210495L0.206115 1.26238Z"
+                            fill="#0B538C" />
+                    </svg>
+                    </div>
+
+
+
+                </div>
+
+
             </div>
 
-
-
+<div class="flex">
+<img class="w-[500px] lg:block hidden mr-10 rounded-lg" src="./src/img/work2.PNG" alt="">
 
             <!-- Slider main container -->
-            <div class="swiper_muz ">
+            <div class="swiper swiper_muz ">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                   
 
 
-                    <div class="swiper-slide swiper-item bg-secondary rounded-lg" >
+
+                    <div class="swiper-slide swiper-item bg-secondary rounded-lg">
+
+                        <div class="flex p-4 mb-5 w-full border-b border-opacity-20 border-white">
+                            <h3 class="text-white uppercase">Название композиции 1</h3>
+                        </div>
 
 
                         <div class="flex items-center lg:flex-nowrap flex-wrap justify-start text-center mb-10">
-                            <span class="lg:w-40 mb-3 lg:mb-0 bg-primary lg:mr-5 lg:py-4 py-1 px-5 rounded-full text-secondary">ДО</span>
+                            <span
+                                class="lg:w-40 mb-3 lg:mb-0 bg-primary lg:mr-5 lg:py-4 py-1 px-5 rounded-full text-secondary">ДО</span>
 
 
 
@@ -399,7 +432,8 @@
 
 
                         <div class="flex items-center lg:flex-nowrap flex-wrap justify-start text-center">
-                            <span class="lg:w-40 mb-3 lg:mb-0 bg-primary lg:mr-5 lg:py-4 py-1 px-5 rounded-full text-secondary">После</span>
+                            <span
+                                class="lg:w-40 mb-3 lg:mb-0 bg-primary lg:mr-5 lg:py-4 py-1 px-5 rounded-full text-secondary">После</span>
 
                             <audio class=" w-full" controls>
                                 <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis" controls="controls">
@@ -418,11 +452,110 @@
 
 
 
+                    <div class="swiper-slide swiper-item bg-secondary rounded-lg">
 
+                        <div class="flex p-4 mb-5 w-full border-b border-opacity-20 border-white">
+                            <h3 class="text-white uppercase">Название композиции 2</h3>
+                        </div>
+
+
+                        <div class="flex items-center lg:flex-nowrap flex-wrap justify-start text-center mb-10">
+                            <span
+                                class="lg:w-40 mb-3 lg:mb-0 bg-primary lg:mr-5 lg:py-4 py-1 px-5 rounded-full text-secondary">ДО</span>
+
+
+
+                            <audio class=" w-full" controls>
+                                <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis" controls="controls">
+                                <source src="./src/mus/do_acoustic folk.mp3" type="audio/mpeg">
+                                Тег audio не поддерживается вашим браузером.
+                                <a href="./src/mus/do_acoustic folk.mp3">Скачайте музыку</a>.
+                            </audio>
+
+
+
+                        </div>
+
+
+
+                        <div class="flex items-center lg:flex-nowrap flex-wrap justify-start text-center">
+                            <span
+                                class="lg:w-40 mb-3 lg:mb-0 bg-primary lg:mr-5 lg:py-4 py-1 px-5 rounded-full text-secondary">После</span>
+
+                            <audio class=" w-full" controls>
+                                <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis" controls="controls">
+                                <source src="./src/mus/posle_acoustic folk.mp3" type="audio/mpeg">
+                                Тег audio не поддерживается вашим браузером.
+                                <a href="audio/music.mp3">Скачайте музыку</a>.
+                            </audio>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="swiper-slide swiper-item bg-secondary rounded-lg">
+
+                        <div class="flex p-4 mb-5 w-full border-b border-opacity-20 border-white">
+                            <h3 class="text-white uppercase">Название композиции 3</h3>
+                        </div>
+
+
+                        <div class="flex items-center lg:flex-nowrap flex-wrap justify-start text-center mb-10">
+                            <span
+                                class="lg:w-40 mb-3 lg:mb-0 bg-primary lg:mr-5 lg:py-4 py-1 px-5 rounded-full text-secondary">ДО</span>
+
+
+
+                            <audio class=" w-full" controls>
+                                <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis" controls="controls">
+                                <source src="./src/mus/do_acoustic folk.mp3" type="audio/mpeg">
+                                Тег audio не поддерживается вашим браузером.
+                                <a href="./src/mus/do_acoustic folk.mp3">Скачайте музыку</a>.
+                            </audio>
+
+
+
+                        </div>
+
+
+
+                        <div class="flex items-center lg:flex-nowrap flex-wrap justify-start text-center">
+                            <span
+                                class="lg:w-40 mb-3 lg:mb-0 bg-primary lg:mr-5 lg:py-4 py-1 px-5 rounded-full text-secondary">После</span>
+
+                            <audio class=" w-full" controls>
+                                <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis" controls="controls">
+                                <source src="./src/mus/posle_acoustic folk.mp3" type="audio/mpeg">
+                                Тег audio не поддерживается вашим браузером.
+                                <a href="audio/music.mp3">Скачайте музыку</a>.
+                            </audio>
+
+
+
+                        </div>
+
+
+
+                    </div>
 
                     
+
+
+
+
+
+
                 </div>
             </div>
+
+
+        </div>
+
 
         </div>
     </section>
@@ -699,9 +832,9 @@
         const swiper_muz = new Swiper('.swiper_muz', {
             // Optional parameters
             //slidesPerView: 3,
-            //initialSlide: 1,
+            initialSlide: 1,
             //spaceBetween: 30,
-           
+
 
 
             //loop: true,
@@ -713,8 +846,8 @@
 
             // Navigation arrows
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.work_arrow_right',
+                prevEl: '.work_arrow_left',
             },
 
             // And if we need scrollbar
