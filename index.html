@@ -33,12 +33,14 @@
 
 
 
-        //     function myAudioFunction(after) {
-        //     audio.pause()
-        //     audio = new Audio('C:\\Users\\SONU\\Desktop\\animal\\'+letter+'.mp3');
-        //      audio.play();
-        //  }
-
+        document.addEventListener('play', function (e) {
+            var audios = document.getElementsByTagName('audio');
+            for (var i = 0, len = audios.length; i < len; i++) {
+                if (audios[i] != e.target) {
+                    audios[i].pause();
+                }
+            }
+        }, true);
 
 
 
@@ -54,12 +56,13 @@
 
 <body>
 
-    <div id="menu-top"
-        class=" w-full px-5 lg:py-0 py-5 transition-all border-b border-white border-opacity-20 absolute z-50">
+    <div id="menu-top" class=" w-full transition-all border-b border-white border-opacity-20 absolute z-50">
         <div class="container mx-auto">
-            <div class="flex justify-between items-center py-3 text-white">
+            <div class="flex justify-between px-5 py-5  items-center text-white">
                 <nav class="w-full flex menu ">
-                    <a class="logo" href="">LOGO</a>
+
+
+
                     <ul class="lg:flex hidden lg:flex-nowrap flex-wrap">
                         <li><a class="p-3 uppercase text-sm" href="">Главная</a></li>
                         <li><a class="p-3 uppercase text-sm" href="">О нас</a></li>
@@ -83,9 +86,15 @@
         <div class="flex items-center h-[700px] justify-center flex-wrap w-full">
 
             <div class="container mx-auto z-40 relative">
-                <h1 class="mb-3">
-                    ЗВУКОЗАПИСЬ.<br>Волгоград МЫ ДЕЛАЕМ ЗВУК
-                </h1>
+                <div class="flex flex-wrap items-center mb-10">
+
+                    <img class="w-40 h-40 lg:mb-0 mb-10" src="./src/img/logo.png" alt="">
+
+                    <h1 class="mb-3 lg:ml-5">
+                        ЗВУКОЗАПИСЬ.<br>Волгоград МЫ ДЕЛАЕМ ЗВУК
+                    </h1>
+
+                </div>
                 <p class="mb-5">
                     Профессиональная студия звукозаписи позволяет выполнить озвучивание, <br>аранжировку, запись,
                     сведение, создание отбивок, джинглов и другого медиа-контента. Звоните: +7 (499) 113-70-32
@@ -98,28 +107,30 @@
         </div>
 
 
-        <div class="absolute w-full bg-gradient-to-l from-secondary border-t border-white border-opacity-20 bottom-0 left-0 z-50 lg:px-0 px-5 adv-top">
+        <div
+            class="absolute w-full bg-gradient-to-l from-secondary border-t border-white border-opacity-20 bottom-0 left-0 z-50 lg:px-0 px-5 adv-top">
             <div class="container mx-auto">
                 <div class="flex justify-between w-full py-5 items-center">
 
 
                     <div class="flex items-center">
-<div class="div">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 mr-5">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
+                        <div class="div">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 mr-5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+
+
+                        <h3 class="lg:text-lg text-sm uppercase pr-5">Оставьте заявку прямо сейчас</h3>
+
                     </div>
 
 
-                        <h3 class="lg:text-lg text-sm uppercase">Оставьте заявку прямо сейчас</h3>
 
-                    </div>
-
-
-
-                    <button class="btn btn-primary px-0 bg-gradient-to-l from-white  py-0 lg:px-5 lg:py-3 text-white lg:w-auto flex items-center ">
+                    <button
+                        class="btn btn-primary px-0 bg-gradient-to-l from-white  py-0 lg:px-5 lg:py-3 text-white lg:w-auto flex items-center ">
 
 
 
@@ -160,7 +171,7 @@
                 </div>
 
                 <div class="lg:w-1/2">
-                    <img class="h-full" src="./src/img/1.PNG" alt="">
+                    <img class="h-full" src="./src/img/20.PNG" alt="">
                 </div>
 
             </div>
@@ -348,50 +359,71 @@
 
 
 
-    <section class="block">
+    <section class="block bg-primary">
 
         <div class="container mx-auto">
             <div class="text-center my-10">
                 <h1>Наши работы</h1>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-20">
-                <div class="flex items-center justify-center flex-wrap text-center">
-                    <span>ДО</span>
-
-                    <button class="do">dooo</button>
-                    <button class="posle">posle</button>
-
-                    <audio class=" w-full" controls>
-                        <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis" controls="controls">
-                        <source src="./src/mus/do_acoustic folk.mp3" type="audio/mpeg">
-                        Тег audio не поддерживается вашим браузером.
-                        <a href="./src/mus/do_acoustic folk.mp3">Скачайте музыку</a>.
-                    </audio>
 
 
 
+            <!-- Slider main container -->
+            <div class="swiper_muz ">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                   
+
+
+                    <div class="swiper-slide swiper-item bg-secondary rounded-lg" >
+
+
+                        <div class="flex items-center lg:flex-nowrap flex-wrap justify-start text-center mb-10">
+                            <span class="lg:w-40 mb-3 lg:mb-0 bg-primary lg:mr-5 lg:py-4 py-1 px-5 rounded-full text-secondary">ДО</span>
+
+
+
+                            <audio class=" w-full" controls>
+                                <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis" controls="controls">
+                                <source src="./src/mus/do_acoustic folk.mp3" type="audio/mpeg">
+                                Тег audio не поддерживается вашим браузером.
+                                <a href="./src/mus/do_acoustic folk.mp3">Скачайте музыку</a>.
+                            </audio>
+
+
+
+                        </div>
+
+
+
+                        <div class="flex items-center lg:flex-nowrap flex-wrap justify-start text-center">
+                            <span class="lg:w-40 mb-3 lg:mb-0 bg-primary lg:mr-5 lg:py-4 py-1 px-5 rounded-full text-secondary">После</span>
+
+                            <audio class=" w-full" controls>
+                                <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis" controls="controls">
+                                <source src="./src/mus/posle_acoustic folk.mp3" type="audio/mpeg">
+                                Тег audio не поддерживается вашим браузером.
+                                <a href="audio/music.mp3">Скачайте музыку</a>.
+                            </audio>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+                    
                 </div>
-
-
-
-                <div class="flex items-center justify-center flex-wrap text-center">
-                    <span>После</span>
-
-                    <audio class=" w-full" controls>
-                        <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis" controls="controls">
-                        <source src="./src/mus/posle_acoustic folk.mp3" type="audio/mpeg">
-                        Тег audio не поддерживается вашим браузером.
-                        <a href="audio/music.mp3">Скачайте музыку</a>.
-                    </audio>
-
-
-
-                </div>
-
-
-
             </div>
+
         </div>
     </section>
 
@@ -554,9 +586,52 @@
 
 
 
-<footer class="bg-primary p-10">
-    <div class="flex items-center justify-center">
-        <p>© 2022 Профессиональная студия звукозаписи в Волгоград</p>
+<footer class="bg-primary relative">
+    <div class="container mx-auto">
+        <div class="flex items-center p-10  justify-between w-full flex-wrap">
+            <p class="uppercase text-sm">© 2022 Профессиональная студия звукозаписи в Волгоград</p>
+
+            <div class="flex items-center justify-center lg:mt-0 mt-10">
+                <div class="flex items-center flex-col lg:flex-row">
+                    <span class="lg:mr-5 w-full uppercase text-sm">Мы в социальных сетях:</span>
+                    <div class="flex lg:w-auto w-full lg:mt-0 mt-3 items-start justify-start">
+                        <svg class="w-10 h-10 mr-3" width="445" height="445" viewBox="0 0 445 445" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="222.5" cy="222.5" r="222.5" fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M218.229 317.203C218.35 317.198 218.455 317.195 218.576 317.195H238.148C238.368 317.195 238.584 317.183 238.802 317.151C240.098 316.959 244.972 316.063 247.644 313.183C250.474 310.133 250.405 304.428 250.403 304.348C250.403 304.345 250.403 304.349 250.403 304.347C250.402 304.265 250.03 277.349 262.515 273.38C274.848 269.462 290.68 299.467 307.459 311.005C318.396 318.528 327.07 318.148 329.257 317.899C329.618 317.858 329.974 317.82 330.338 317.815L374.52 317.197C374.615 317.195 374.696 317.193 374.791 317.185C376.638 317.037 397.651 314.941 387.005 297.259C386.094 295.749 380.521 283.585 353.641 258.594C325.503 232.436 329.274 236.668 363.166 191.422C383.807 163.867 392.057 147.046 389.479 139.842C387.238 133.579 374.402 134.54 372.171 134.756C371.946 134.778 371.727 134.792 371.502 134.793L321.744 135.101C321.461 135.103 321.18 135.084 320.897 135.063C319.841 134.986 317.009 134.93 314.795 136.257C312.443 137.666 310.82 140.708 310.428 141.496C310.365 141.623 310.316 141.741 310.266 141.874C309.452 144.013 301.753 164.001 291.677 181.143C269.18 219.405 260.183 221.43 256.506 219.051C247.951 213.513 250.089 196.807 250.089 184.936C250.089 147.854 255.704 132.393 239.154 128.391C233.663 127.064 229.618 126.186 215.572 126.042C197.544 125.859 182.29 126.098 173.65 130.337C167.902 133.157 163.468 139.438 166.17 139.799C169.51 140.245 177.071 141.843 181.079 147.307C185.891 153.863 186.076 168.002 186.078 169.976C186.078 170.135 186.081 170.261 186.091 170.42C186.299 173.711 188.647 214.079 179.129 219.278C172.32 222.997 162.978 215.405 142.921 180.691C132.81 163.194 125.134 143.88 124.892 143.267C124.884 143.248 124.883 143.245 124.875 143.226C124.735 142.892 123.259 139.482 120.722 137.614C118.138 135.712 114.735 134.848 113.467 134.576C113.13 134.504 112.789 134.478 112.445 134.48L65.0157 134.79C64.9729 134.791 64.9341 134.791 64.8913 134.793C64.1925 134.821 57.6041 135.161 55.0981 138.132C52.9444 140.687 54.5715 145.731 54.8664 146.577C54.8954 146.66 54.9003 146.676 54.9351 146.758C56.0358 149.325 93.1313 235.442 135.055 279.165C172.697 318.419 215.251 317.33 218.229 317.203Z"
+                                fill="#27A5E5" />
+                        </svg>
+
+
+
+
+
+
+
+                        <svg class="w-10 h-10" width="445" height="445" viewBox="0 0 445 445" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_28_10)">
+                                <path
+                                    d="M222.593 445.185C345.527 445.185 445.185 345.527 445.185 222.593C445.185 99.6581 345.527 0 222.593 0C99.6581 0 0 99.6581 0 222.593C0 345.527 99.6581 445.185 222.593 445.185Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M78.2811 208.315C149.939 177.225 197.642 156.567 221.596 146.545C289.773 118.113 304.105 113.205 313.318 113C315.365 113 319.869 113.409 322.94 115.864C325.397 117.909 326.011 120.568 326.421 122.613C326.83 124.659 327.24 128.954 326.83 132.227C323.145 171.089 307.176 265.382 298.986 308.744C295.506 327.153 288.75 333.289 282.198 333.903C267.866 335.13 257.015 324.494 243.298 315.494C221.596 301.381 209.517 292.586 188.429 278.677C164.065 262.723 179.83 253.928 193.752 239.61C197.437 235.928 260.291 178.657 261.52 173.544C261.724 172.93 261.724 170.476 260.291 169.248C258.858 168.021 256.811 168.43 255.173 168.839C252.921 169.248 218.525 192.157 151.577 237.36C141.749 244.11 132.946 247.383 124.961 247.178C116.157 246.973 99.3689 242.269 86.6753 238.178C71.3201 233.269 59.036 230.61 60.0597 222.02C60.6739 217.52 66.8159 213.02 78.2811 208.315Z"
+                                    fill="#27A5E5" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_28_10">
+                                    <rect width="445" height="445" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
 
@@ -569,20 +644,7 @@
 
 
 
-        var firstButtonIsClicked = false;
 
-        document.querySelector(".posle").addEventListener("click", function () {
-            firstButtonIsClicked = true;
-        });
-
-        document.querySelector(".do").addEventListener("click", function () {
-            if (firstButtonIsClicked) {
-                console.log("Кнопка была нажата");
-            }
-            else {
-                console.log("Кнопка не была нажата");
-            }
-        })
 
         const swiper = new Swiper('.swiper', {
             // Optional parameters
@@ -630,11 +692,91 @@
                 }
             },
         });
+
+
+
+
+        const swiper_muz = new Swiper('.swiper_muz', {
+            // Optional parameters
+            //slidesPerView: 3,
+            //initialSlide: 1,
+            //spaceBetween: 30,
+           
+
+
+            //loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+
+
+
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                }
+            },
+        });
+
+
     </script>
 
 
+    <div class="w-full items-center p-5 justify-center flex w-full relative bg-black">
+
+
+        <svg class="w-10 h-10 absolute -top-5" width="445" height="445" viewBox="0 0 445 445" fill="none"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <circle cx="222.5" cy="222.5" r="222.5" fill="url(#pattern0)" />
+            <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_30_21" transform="scale(0.00240964)" />
+                </pattern>
+                <image id="image0_30_21" width="415" height="415"
+                    xlink:href="data:image/jpeg;base64,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" />
+            </defs>
+        </svg>
+
+
+
+
+
+        <div class="uppercase text-sm bg-black text-white mt-2">powered by alex</div>
+
+
+
+    </div>
+
 
 </footer>
+
+
+
 
 
 </html>
