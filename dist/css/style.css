@@ -73,24 +73,19 @@ background-color: rgb(169, 169, 169);
 } 
 
 
-@media screen and (min-width: 240px) and (max-width: 699px) {
-    /* стили */
-.btn-240{
-@apply px-3 py-3 cursor-pointer rounded-sm uppercase text-xs; 
- font-weight:600;
+.menu-toggle{
+   
 
-} }
+}
 
 
 
-
-@media screen and (min-width: 700px) {
     /* стили */
 .btn-700{
-@apply px-5 py-3 cursor-pointer rounded-sm uppercase text-sm; 
+@apply px-5 py-3 cursor-pointer rounded-sm uppercase lg:text-sm text-xs; 
  font-weight:600;
 
-} }
+} 
 
 
 
