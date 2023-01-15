@@ -67,12 +67,38 @@ h1 {
 
 }
 
+.hover-Gray:hover{
+color: white;
+background-color: rgb(169, 169, 169);
+} 
 
-.btn{
+
+@media screen and (min-width: 240px) and (max-width: 699px) {
+    /* стили */
+.btn-240{
+@apply px-3 py-3 cursor-pointer rounded-sm uppercase text-xs; 
+ font-weight:600;
+
+} }
+
+
+
+
+@media screen and (min-width: 700px) {
+    /* стили */
+.btn-700{
 @apply px-5 py-3 cursor-pointer rounded-sm uppercase text-sm; 
-font-weight:600;
+ font-weight:600;
 
-}
+} }
+
+
+
+
+
+
+
+
 
 .btn-primary{
     @apply bg-primary  px-5 py-3 text-black;
